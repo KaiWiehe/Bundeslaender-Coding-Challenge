@@ -1,0 +1,113 @@
+:root {
+    --bgPrimary: #dddddd;
+    --fontColor: #666666;
+    --bgSecondary: #eeeeee;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.1rem;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    width: 64rem;
+}
+
+header {
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+    font-weight: 900;
+    background: var(--bgPrimary);
+    color: var(--fontColor);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+.contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 10px;
+    margin: 0 0.25rem 0.25rem 0;
+    border: 10px solid var(--bgSecondary);
+    width: 33%;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: transform 125ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    color: black;
+}
+
+.card span {
+    color: var(--fontColor);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--bgSecondary);
+    font-size: 2rem;
+    margin: 1rem;
+    transition: transform 125ms ease-in-out;
+}
+
+.letter:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.showAllButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    background: var(--bgSecondary);
+    font-size: 1.25rem;
+    margin: 1rem;
+    transition: transform 125ms ease-in-out;
+}
+
+.showAllButton:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+}
